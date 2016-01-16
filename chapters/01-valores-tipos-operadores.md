@@ -290,7 +290,7 @@ console.log(false == 0)
 // → true
 
 ```
-Quando um operador é aplicado a um tipo de valor "errado", ele vai silenciosamente converter este valor para o tipo que quiser, usando um conjunto de regras que frequentemente não são as que você expera. O `null` na primeira expressão torna-se 0, o `"5"` na segunda expressão se torna `5` (de string para número), ainda na terceira expressão, o `+` tenta a concatenação de strings antes de tentar a adição numérica, o `1` é convertido em `"1"` (de número para string).
+Quando um operador é aplicado a um tipo de valor "errado", ele vai silenciosamente converter este valor para o tipo que quiser, usando um conjunto de regras que frequentemente não são as que você espera. O `null` na primeira expressão torna-se 0, o `"5"` na segunda expressão se torna `5` (de string para número), ainda na terceira expressão, o `+` tenta a concatenação de strings antes de tentar a adição numérica, o `1` é convertido em `"1"` (de número para string).
 
 Quando algo que não pode ser mapeado como um número de forma óbvia, do tipo `"five"` ou `undefined` é convertido para um número, o valor `NaN` é produzido. Operações aritméticas com `NaN` continuam produzindo `NaN`, então se você encontrar alguns destes resultados em algum local inesperado, procure por conversões acidentais de tipo.
 
@@ -319,7 +319,7 @@ console.log("Karl" || "user")
 
 O operador `&&` trabalha similarmente, mas ao contrário. Quando o valor à sua esquerda é algo que se torne `false`, ele retorna o valor, e caso contrário ele retorna o valor à sua direita.
 
-Outro importante propriedade destes 2 operadores é que a expressão a sua direita é avaliada somente quando necessário. No caso de `true || X`, não importa o que `X` é - pode ser uma expressão que faça algo *terrível* - o resultado vai ser verdadeiro, e `X` nunca é avaliado. O mesmo acontece para `false && X`, que é falso, e vai ignorar `X`.
+Outra importante propriedade destes 2 operadores é que a expressão a sua direita é avaliada somente quando necessário. No caso de `true || X`, não importa o que `X` é - pode ser uma expressão que faça algo *terrível* - o resultado vai ser verdadeiro, e `X` nunca é avaliado. O mesmo acontece para `false && X`, que é falso, e vai ignorar `X`.
 
 ## Resumo
 
